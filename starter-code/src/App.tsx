@@ -1,19 +1,20 @@
-import React from 'react';
-
-import Sidebar from './components/Sidebar/Sidebar';
-import MainHeader from './components/MainHeader/MainHeader';
-import InvoiceTable from './components/Table/InvoiceTable';
+import React from "react"
+import NavRoute from "./NavRoute";
 
 
-function App() {
+
+
+const App: React.FunctionComponent = () => {
   return (
-    <div className="App">
- <MainHeader/>
-    <Sidebar/>
+    <div className="bg-gray-100 w-screen h-screen flex flex-col">
      
-<InvoiceTable/>
+
+      <div className="flex flex-col flex-1 overflow-auto">
+       
+        <NavRoute />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
