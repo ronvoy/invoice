@@ -1,14 +1,17 @@
 import React from 'react';
 
-import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import MainHeader from './components/MainHeader/MainHeader';
+import InvoiceTable from './components/Table/InvoiceTable';
+
 
 function App() {
   return (
     <div className="App">
-     <h1 className="text-3xl text-blue-300 font-bold underline">
-      Hello world!
-    </h1>
-    
+ <MainHeader/>
+    <Sidebar/>
+     
+<InvoiceTable/>
     </div>
   );
 }
