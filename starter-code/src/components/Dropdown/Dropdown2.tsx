@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 const status: Array<string> = [
-  "Pending","Paid","Draft"]
-export default function Dropdown() {
+  "net 15 days","net 1 year"]
+export default function Dropdown2() {
   const getInitialState = () => {
-    const value = "Filter by status"
+    const value = "net 30 days"
     return value
   }
 
@@ -16,14 +16,11 @@ export default function Dropdown() {
 
   return (
     <div>
-      <select className="bg-gray-100 " value={value} onChange={handleChange}>
-      <option disabled={true} value="">
-          Filter by status
-        </option>
+      <select className="bg-gray-100 " name="" value={value} onChange={handleChange}>
         {status.map((status) => {
           return (
             <>
-           
+        
             <option key={status} value={status}>
               {status}
             </option>
